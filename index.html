@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <style>
+    #sidebar{
+        top: 200px;
+    }
+ </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-success fixed-top">
+    <a class="navbar-brand" href="#"><img src="horti.png" width="100px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" height="20%">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contatos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="coluna">
+      <nav id="sidebar" class="col-md-1 col-lg-2 d-md-block bg-success sidebar collapse">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Produtos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="shopping-cart"></span>
+                Morango
+            <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="shopping-cart"></span>
+                      Maçã
+                    </a>
+            <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span data-feather="shopping-cart"></span>
+                          Alface
+                        </a>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Produtos Disponíveis</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card bg-danger">
+              <div class="card-body">
+                <h5 class="card-title">Morango</h5>
+                <p class="card-text"><img src="morango.jpg" width="220px"></p>
+                <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-danger">
+              <div class="card-body">
+                <h5 class="card-title">Maçã</h5>
+                <p class="card-text"><img src="ma.jpg" width="200px"></p>
+                <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-danger">
+              <div class="card-body">
+                <h5 class="card-title">Alface</h5>
+                <p class="card-text"><img src="alf.jfif" width="190px"></p>
+                <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer class="footer mt-auto py-3 bg-success">
+    <div class="container">
+      <span class="text">Hortifruit - © 2024</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
